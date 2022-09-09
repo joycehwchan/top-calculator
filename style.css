@@ -2,25 +2,31 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
-  font-weight: normal;
 }
 
 body {
   margin: 0;
   padding: 0;
-  text-align: center;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
   overflow: hidden;
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+}
+
+.title{
+  margin-top: 40px;
+  text-transform: uppercase;
 }
 
 .calculator-grid {
+  min-height: 80vh;
+  margin-top: 8px;
   display: grid;
   justify-content: center;
   align-content: center;
-  min-height: 100vh;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
@@ -31,6 +37,7 @@ body {
   border: 1px solid white;
   outline: none;
   background-color: rgba(255, 255, 255, 0.75);
+  transition: all 0.2s;
 }
 
 button:hover {
@@ -73,4 +80,9 @@ button:hover {
 .output .current-display {
   color: rgba(255, 255, 255, 1);
   font-size: 2.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+	font-weight: 600;
 }
