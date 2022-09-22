@@ -1,6 +1,7 @@
 # Calculator
 
-A simple calculator created with HTML, CSS and JavaScript. 
+A simple calculator created with HTML, CSS and JavaScript.<br>
+Project for the Odin Project.
 
 ### What I learned
 * Understand how functions and variables interact
